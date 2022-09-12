@@ -9,11 +9,11 @@
 	?>
 	<ul class="post-nav group">
 		<?php if($next_link){ ?>
-		<li class="next"><strong><?php _e('Next story', 'hueman'); ?>&nbsp;</strong><?php echo $next_link; ?></li>
+		<li class="next"><strong><?php _e('Sljedeći post', 'hueman'); ?>&nbsp;</strong><?php echo $next_link; ?></li>
 		<?php }?>
 
 		<?php if ($prev_link){ ?>
-		<li class="previous"><strong><?php _e('Previous story', 'hueman'); ?>&nbsp;</strong><?php echo $prev_link; ?></li>
+		<li class="previous"><strong><?php _e('Prethodni post', 'hueman'); ?>&nbsp;</strong><?php echo $prev_link; ?></li>
 		<?php } ?>
 	</ul>
 <?php endif; ?>

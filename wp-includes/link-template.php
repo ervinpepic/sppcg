@@ -2485,7 +2485,7 @@ function get_next_posts_link( $label = null, $max_page = 0 ) {
 	$nextpage = (int) $paged + 1;
 
 	if ( null === $label ) {
-		$label = __( 'Next Page &raquo;' );
+		$label = __( 'Sljedeća stranica &raquo;' );
 	}
 
 	if ( ! is_single() && ( $nextpage <= $max_page ) ) {

@@ -3,7 +3,7 @@
 /**
  * Добавление новых опций в базу данных
  */
-class WAPTUpdate030700 extends Wbcr_Factory460_Update
+class WAPTUpdate030700 extends Wbcr_Factory463_Update
 {
 
     public function install()

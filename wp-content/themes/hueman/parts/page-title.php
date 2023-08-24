@@ -15,13 +15,10 @@ if ( is_single() ) {
       <?php // For a regular post, we display the category and comments ?>
       <?php elseif ( is_single() && 'post' === $post_type ): ?>
     		<ul class="meta-single group">
-    		    <li class="category">
-                    <?php 
-                        if ( function_exists('yoast_breadcrumb') ) { 
-                            yoast_breadcrumb( '</p><p id=“breadcrumbs”>','</p><p>' );
-                        }
-                    ?>  
-                </li>
+    			<li class="category"><?php the_category(' <span>/</span> '); ?></li>
+    			<?php if ( comments_open() && ( hu_is_checked( 'comment-count' ) ) ): ?>
+    			<li class="comments"><a href="<?php comments_link(); ?>"><i class="far fa-comments"></i><?php comments_number( '0', '1', '%' ); ?></a></li>
+    			<?php endif; ?>
     		</ul>
       <?php // For a CPT, we display the post title ?>
       <?php elseif ( is_single() && 'post' !== $post_type ): ?>
